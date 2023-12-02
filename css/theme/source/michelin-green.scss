@@ -1,0 +1,36 @@
+/**
+ * A Michelin-themed Green IT presentation template for Reveal.js.
+ * The accent color is a Michelin-inspired dark green.
+ *
+ * This theme is based on original work by Owen Versteeg and Hakim El Hattab.
+ * It is licensed under MIT.
+ */
+
+// Default mixins and settings importations -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ----------------------------------------------------------
+
+// Importing theme-specific fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+// Overriding theme settings (see ../template/settings.scss)
+$mainFont: 'Roboto', sans-serif;
+$headingFont: 'Montserrat', sans-serif;
+$mainColor: #004D40; // Michelin-inspired dark green
+$headingColor: #004D40; // Michelin-inspired dark green
+$backgroundColor: #F1F8E9; // Light green
+$linkColor: #1B5E20; // Michelin green
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: rgba(0, 77, 64, 0.99); // Michelin dark green
+
+$overlayElementBgColor: 0, 77, 64; // Michelin dark green
+$overlayElementFgColor: 240, 240, 240; // Near white
+
+// Text colors for dark backgrounds
+@include dark-bg-text-color(#fff);
+
+// Importing theme template --------------------------------
+@import "../template/theme";
+// ----------------------------------------------------------
