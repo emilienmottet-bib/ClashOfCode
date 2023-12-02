@@ -1,0 +1,42 @@
+/**
+ * A Michelin-themed designsystem IT presentation template for Reveal.js.
+ * The accent color is a Michelin-inspired by design system.
+ *
+ * This theme is based on original work by Owen Versteeg and Hakim El Hattab.
+ * It is licensed under MIT.
+ */
+
+// Default mixins and settings importations -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ----------------------------------------------------------
+
+// Importing theme-specific fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+// Michelin Brand Colors
+$mic-brand-color-blue: #27509b;
+$mic-brand-color-yellow: #fce500;
+$mic-brand-color-grey: #eeeeee;
+$mic-brand-color-light-grey: #fafafa;
+
+// Theme Settings
+$mainFont: "Roboto", sans-serif;
+$headingFont: "Montserrat", sans-serif;
+$mainColor: $mic-brand-color-blue; // Primary color for text
+$headingColor: $mic-brand-color-blue; // Heading color
+$backgroundColor: $mic-brand-color-light-grey; // Background color
+$linkColor: $mic-brand-color-blue; // Link color
+$linkColorHover: lighten($linkColor, 15%); // Hover state for links
+$selectionBackgroundColor: $mic-brand-color-yellow; // Highlight color
+
+$overlayElementBgColor: $mic-brand-color-grey; // Overlay background color
+$overlayElementFgColor: #f0f0f0; // Overlay foreground color (near white)
+
+// Text colors for dark backgrounds
+@include dark-bg-text-color(#fff);
+
+// Importing theme template --------------------------------
+@import "../template/theme";
+// ----------------------------------------------------------
