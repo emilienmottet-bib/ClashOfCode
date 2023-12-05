@@ -15,6 +15,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
+$mic-text-colors-normal: rgba(0, 0, 0, 0.87);
+$mic-text-colors-normal-light: #ffffff;
+
 // Michelin Brand Colors
 $mic-brand-color-blue: #27509b;
 $mic-brand-color-yellow: #fce500;
@@ -40,3 +43,20 @@ $overlayElementFgColor: #f0f0f0; // Overlay foreground color (near white)
 // Importing theme template --------------------------------
 @import "../template/theme";
 // ----------------------------------------------------------
+
+// slide Q&A
+.qa-slide {
+  background-color: $mic-brand-color-blue;
+  color: $mic-text-colors-normal-light;
+  text-align: center;
+
+  .qa-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .qa-content {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
+}
