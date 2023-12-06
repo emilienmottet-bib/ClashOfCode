@@ -62,6 +62,19 @@ $overlayElementFgColor: #f0f0f0; // Overlay foreground color (near white)
     font-size: 1.8em;
     margin-top: 0.1em;
   }
+
+  .presenter-name, .company-name {
+    font-size: 1.2em; 
+    margin-top: 10px; 
+  }
+
+  .presenter-name {
+    font-style: italic; 
+  }
+
+  .company-name {
+    font-weight: bold; 
+  }
 }
 
 // General Slide Styles
