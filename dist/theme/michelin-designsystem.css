@@ -360,9 +360,41 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
     background-color: var(--r-background-color);
   }
 }
+.first-slide {
+  background-color: #eeeeee;
+  color: #27509b;
+  text-align: center;
+}
+.first-slide .first-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.1em;
+}
+.first-slide .first-subtitle {
+  font-size: 1.8em;
+  margin-top: 0.1em;
+}
+
+.reveal section {
+  background-color: #fafafa;
+  color: #27509b;
+  font-family: "Roboto", sans-serif;
+}
+.reveal section h1, .reveal section h2, .reveal section h3, .reveal section h4, .reveal section h5, .reveal section h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #27509b;
+}
+.reveal section a {
+  color: #27509b;
+}
+.reveal section a:hover {
+  color: #4072cf;
+}
+
 .qa-slide {
-  background-color: #27509b;
-  color: #ffffff;
+  background-color: #004D40;
+  color: #fce500;
   text-align: center;
 }
 .qa-slide .qa-title {
@@ -372,4 +404,9 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .qa-slide .qa-content {
   font-size: 1.5em;
   margin-top: 0.5em;
+}
+.qa-slide .qa-image {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
 }

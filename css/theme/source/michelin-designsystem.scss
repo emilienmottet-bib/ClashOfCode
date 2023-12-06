@@ -23,6 +23,7 @@ $mic-brand-color-blue: #27509b;
 $mic-brand-color-yellow: #fce500;
 $mic-brand-color-grey: #eeeeee;
 $mic-brand-color-light-grey: #fafafa;
+$mic-brand-color-dark-blue: #004D40; // Adjusted to a blue shade for this theme
 
 // Theme Settings
 $mainFont: "Roboto", sans-serif;
@@ -44,10 +45,48 @@ $overlayElementFgColor: #f0f0f0; // Overlay foreground color (near white)
 @import "../template/theme";
 // ----------------------------------------------------------
 
-// slide Q&A
+// First Slide Styles
+.first-slide {
+  background-color: $mic-brand-color-grey;
+  color: $mic-brand-color-blue;
+  text-align: center;
+
+  .first-title {
+    font-family: $headingFont;
+    font-size: 2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.1em;
+  }
+
+  .first-subtitle {
+    font-size: 1.8em;
+    margin-top: 0.1em;
+  }
+}
+
+// General Slide Styles
+.reveal section {
+  background-color: $backgroundColor;
+  color: $mainColor;
+  font-family: $mainFont;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $headingFont;
+    color: $headingColor;
+  }
+
+  a {
+    color: $linkColor;
+    &:hover {
+      color: $linkColorHover;
+    }
+  }
+}
+
+// Q&A Slide Styles
 .qa-slide {
-  background-color: $mic-brand-color-blue;
-  color: $mic-text-colors-normal-light;
+  background-color: $mic-brand-color-dark-blue;
+  color: $mic-brand-color-yellow;
   text-align: center;
 
   .qa-title {
@@ -58,5 +97,11 @@ $overlayElementFgColor: #f0f0f0; // Overlay foreground color (near white)
   .qa-content {
     font-size: 1.5em;
     margin-top: 0.5em;
+  }
+
+  .qa-image {
+    width: 300px; // Adjust as needed
+    height: auto;
+    margin-bottom: 20px;
   }
 }
