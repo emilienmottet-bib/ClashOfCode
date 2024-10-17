@@ -16,7 +16,7 @@ def main(handles):
 
             # Loop through each player to gather ranking information
             for player in players:
-                if player.score is not None:  # Check if the player has a ranking
+                if player.score == 100:  # Check if the player has a ranking
                     player_stats[player.pseudo]['count'] += 1
                     player_stats[player.pseudo]['sum'] += player.rank
         except Exception as e:
